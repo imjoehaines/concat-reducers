@@ -16,6 +16,6 @@
     "babel-preset-env": "^1.6.0"
   },
   "scripts": {
-    "prepublish": "babel index.js > dist/index.js"
+    "prepublishOnly": "babel index.js > dist/index.js"
   }
 }
