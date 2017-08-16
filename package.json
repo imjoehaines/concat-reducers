@@ -1,6 +1,6 @@
 {
   "name": "concat-reducers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Concat several reducers into a single reducer without nesting state",
   "main": "dist/index.js",
   "repository": "https://github.com/imjoehaines/concat-reducers",
