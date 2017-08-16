@@ -1,0 +1,21 @@
+{
+  "name": "concat-reducers",
+  "version": "1.0.0",
+  "description": "Concat several reducers into a single reducer without nesting state",
+  "main": "dist/index.js",
+  "repository": "https://github.com/imjoehaines/concat-reducers",
+  "author": "imjoehaines",
+  "license": "Unlicense",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  },
+  "scripts": {
+    "prepublish": "babel index.js > dist/index.js"
+  }
+}
