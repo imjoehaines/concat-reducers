@@ -1,5 +1,7 @@
-# Concat-reducers
-By default, Redux's combineReducers nests state. This concats several reducers into a single reducer without nesting state, allowing you to decide how to structure state.
+# Concat-Reducers
+By default, Redux's combineReducers nests state, which makes it inconvenient to split a large reducer into smaller parts.
+
+Concat-Reducers combines any number of reducers into a single reducer without nesting state, allowing you to decide how to structure state within your own app.
 
 ## Installation
 ```
@@ -14,7 +16,7 @@ import concatReducers from 'concat-reducers'
 import myFirstReducer from './myFirstReducer'
 import mySecondReducer from './mySecondReducer'
 
-export default concatReducers(
+const reducer = concatReducers(
   myFirstReducer,
   mySecondReducer
 )
@@ -23,7 +25,7 @@ export default concatReducers(
 
 ## Further info
 
-This converts this:
+State that looks like this with `combineReducers`:
 
 ```js
 {
@@ -44,7 +46,7 @@ This converts this:
 }
 ```
 
-to:
+would instead look like this with `concatReducers`:
 
 ```js
 {
